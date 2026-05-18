@@ -1,7 +1,9 @@
-src/
+src
+test
+tests
+scripts
 tsconfig.json
+tsconfig.build.json
 .gitignore
-node_modules/
-*.tsbuildinfo
-.idea/
-.vscode/
+.github
+*.tgz

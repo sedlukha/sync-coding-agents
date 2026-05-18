@@ -1,6 +1,13 @@
-node_modules/
-*.log
+node_modules
+dist
+coverage
 .DS_Store
-.idea/
-.vscode/
+*.log
+.env
+.env.local
+.idea
+.vscode
+*.tgz
 *.tsbuildinfo
+pnpm-lock.yaml
+yarn.lock
