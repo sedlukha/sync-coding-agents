@@ -1,0 +1,48 @@
+{
+  "name": "sync-coding-agents",
+  "version": "0.1.0",
+  "description": "Sync .agents/ (single source of truth) into .claude/ and .github/ so Claude Code and GitHub Copilot pick up the same agent and skill definitions.",
+  "license": "MIT",
+  "author": "Arthur Sedlukha",
+  "type": "module",
+  "bin": {
+    "sync-coding-agents": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedlukha/sync-coding-agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sedlukha/sync-coding-agents/issues"
+  },
+  "homepage": "https://github.com/sedlukha/sync-coding-agents#readme",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "github-copilot",
+    "agents",
+    "skills",
+    "ai",
+    "sync",
+    "symlinks",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
